@@ -3,16 +3,33 @@
 [![CI](https://github.com/napari/npe2/actions/workflows/ci.yml/badge.svg)](https://github.com/napari/npe2/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/napari/npe2/branch/main/graph/badge.svg?token=FTH635x542)](https://codecov.io/gh/napari/npe2)
 
+<<<<<<< HEAD
 ## Project description
 
 The **napari plugin engine version 2**, **npe2** extends the functionality of
 [napari's core](https://github.com/napari/napari).
 The plugin ecosystem offers user additional functionality for napari as well
 as specific support for different scientific domains.
+=======
+## napari plugin engine version 2
+
+The **napari plugin engine version 2**, **npe2** extends the functionality of napari's core.
+The plugin ecosystem offers user additional functionality for napari as well as specific support
+for different scientific domains.
+
+This repo contains source code and documentation about the napari plugin engine.
+>>>>>>> c231a27 (Update readme to provide more description of the repo and move history to end)
 
 This repo contains all source code and documentation required for defining, validating and managing plugins for napari.
 
+<<<<<<< HEAD
 ## Getting started
+=======
+See the: [napari plugin docs](https://napari.org/stable/plugins/index.html) for information about
+creating plugins for the napari plugin engine (npe2).  These docs include:
+- the [plugin manifest reference](https://napari.org/stable/plugins/technical_references/manifest.html)
+- the [plugin contribution guide](https://napari.org/stable/plugins/building_a_plugin/guides.html)
+>>>>>>> c231a27 (Update readme to provide more description of the repo and move history to end)
 
 The [napari plugin docs landing page](https://napari.org/stable/plugins/index.html)
 offers comprehensive information for **plugin users** and for **plugin developers**.
@@ -128,17 +145,23 @@ Show a parsed manifest of your plugin:
 npe2 parse your-plugin-package
 ```
 
+<<<<<<< HEAD
 ## License
 
 npe2 uses the [BSD License](./LICENSE).
 
+=======
+>>>>>>> c231a27 (Update readme to provide more description of the repo and move history to end)
 ## History
 
 This repo replaces the initial napari plugin engine v1.
 See also https://github.com/napari/napari/issues/3115 for
 motivation and technical discussion about the creation of v2.
+<<<<<<< HEAD
 
 ## Contact us
 
 Visit [our community documentation](https://napari.org/stable/community/index.html)
 or [open a new issue on this repo](https://github.com/napari/npe2/issues/new).
+=======
+>>>>>>> c231a27 (Update readme to provide more description of the repo and move history to end)
