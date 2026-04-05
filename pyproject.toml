@@ -72,6 +72,7 @@ json = ["jsonschema>=4.20"]
 [project.scripts]
 npe2 = "npe2.cli:main"
 
+# NOTE: stdlib distutils is gone in Python 3.12+
 [project.entry-points."distutils.commands"]
 npe2_compile = "npe2._setuptools_plugin:npe2_compile"
 
@@ -81,6 +82,7 @@ npe2 = "npe2._pytest_plugin"
 # Necessary entrypoint for napari plugins that compile with setuptools and [tool.npe2]
 [project.entry-points."setuptools.finalize_distribution_options"]
 finalize_npe2 = "npe2._setuptools_plugin:finalize_npe2"
+
 
 [tool.check-manifest]
 ignore = []
@@ -92,7 +94,6 @@ markers = [
     "github_main_only: Test to run only on github main (verify it does not break latest napari docs build)",
 ]
 
-# https://github.com/charliermarsh/ruff
 [tool.ruff]
 line-length = 88
 target-version = "py310"
@@ -101,7 +102,7 @@ src = ["src/npe2", "tests"]
 lint.select = [
     "E",
     "F",
-    "W",   #flake8
+    "W",   # flake8
     "UP",  # pyupgrade
     "I",   # isort
     "B",   # flake8-bugbear
